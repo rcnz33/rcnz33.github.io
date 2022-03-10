@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+body {
+  background-color: rgb(116, 202, 152);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1,
+p {
+  text-align: center;
+  margin: 2px;
+}
+
+.welcome {
+  background-color: rgba(255, 60, 60, 0.5);
+  color: white;
+  padding: 2px;
+  border-radius: 12px;
+  margin: 10px auto;
+  min-width: 200px;
+  max-width: fit-content;
+}
+
+.divider {
+  border-bottom: solid rgba(0, 0, 0, 0.1) 2px;
+  margin-bottom: 10px;
+}
+
+/* THE TOOL */
+.container {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  left: 10%;
+  max-width: 500px; */
+
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.content h1 {
+  color: rgb(255, 229, 142);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.content p {
+  margin: 20px;
+  font-size: 2em;
+}
+
+.button {
+  width: 100%;
+  width: 50%;
+  margin: 8px auto;
+}
+
+.button button {
+  background-color: rgb(41, 230, 66);
+  padding: 4px 25px;
+  border: solid rgb(39, 139, 14) 2px;
+  border-bottom-width: 6px;
+  padding: 2px 4px;
+  width: 100%;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button button:hover {
+  background-color: rgb(38, 255, 67);
+  cursor: pointer;
+}
+
+.button button:active {
+  padding: 4px;
+  border: solid rgb(39, 139, 14) 2px;
+  background-color: rgb(41, 230, 66);
+  padding-top: 2px;
+  margin-top: 2px;
+}
+
+.btns {
+  display: flex;
+}
+
+.save-btn {
+  border: solid rgb(83, 137, 173) 2px;
+  background-color: rgb(205, 235, 253);
+  border-radius: 12px 0 0 12px;
+  border-bottom-width: 6px;
+  width: 100%;
+}
+
+.save-btn::before {
+  font-family: "Material Icons";
+  content: "\e161";
+  position: relative;
+  top: 2px;
+  font-size: 1.2rem;
+  color: rgb(89, 136, 199);
+}
+
+.save-btn:hover {
+  cursor: pointer;
+  background-color: rgb(232, 246, 255);
+}
+
+.save-btn:active {
+  border: solid rgb(83, 137, 173) 2px;
+  padding-top: 2px;
+  margin-top: 2px;
+}
+
+/* reset button */
+.reset-btn {
+  width: 100%;
+  border: solid rgb(173, 83, 83) 2px;
+  background-color: rgb(205, 235, 253);
+  border-radius: 0 12px 12px 0;
+  border-bottom-width: 6px;
+}
+
+.reset-btn::before {
+  font-family: "Material Icons";
+  content: "\f053";
+  position: relative;
+  top: 2px;
+  font-size: 1.2rem;
+  color: rgb(199, 89, 89);
+}
+
+.reset-btn:hover {
+  cursor: pointer;
+  background-color: rgb(232, 246, 255);
+}
+
+.reset-btn:active {
+  border: solid rgb(173, 83, 83) 2px;
+  padding-top: 2px;
+  margin-top: 2px;
+}
+
+/* PREVIOUS ENTRIES */
+.card-entries {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.entry-title {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  padding-left: 2px;
+  margin-bottom: 8px;
+}
+
+.entry-title::before {
+  font-family: "Material Icons";
+  content: "\ea77";
+  position: relative;
+  top: 2px;
+}
+
+.card-entries p {
+  color: #444;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 4px;
+}
