@@ -1,0 +1,30 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 50px 0;
+}
+
+@media only screen and (max-width: 460px) {
+  body {
+    width: 100%;
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  a {
+    font-size: 13px;
+  }
+}
