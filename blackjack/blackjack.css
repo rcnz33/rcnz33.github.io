@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.game-display {
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  background-color: green;
+  padding: 10px;
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  /* margin: 0 auto; */
+}
+
+.game h1 {
+  color: yellow;
+  text-align: center;
+}
+
+.game p {
+  color: white;
+}
+
+#message-el {
+  color: rgba(255, 255, 255, 0.5);
+}
