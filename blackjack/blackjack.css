@@ -6,32 +6,107 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5rem;
+  word-spacing: 0;
 }
 
 .game-display {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .game {
-  background-color: green;
-  padding: 10px;
+  background-image: url(./image-resources/green-table.jpg);
+  background-position: center;
+  padding: 12px;
   width: 400px;
-  height: 400px;
+  height: 300px;
   max-width: 400px;
-  max-height: 400px;
-  /* margin: 0 auto; */
+  max-height: 300px;
+  border-radius: 6px;
+  filter: brightness(125%);
 }
 
 .game h1 {
-  color: yellow;
+  color: rgb(252, 255, 58);
   text-align: center;
+  margin: 10% 0;
+  font-size: 3.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .game p {
   color: white;
+  text-align: center;
 }
 
 #message-el {
   color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* START GAME BUTTON */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 20px auto;
+  gap: 4px;
+}
+
+.buttons button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  mix-blend-mode: screen;
+  transition: 50ms ease;
+}
+
+.buttons button:hover {
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.75);
+  transform: scale(111%);
+}
+
+.buttons button:active {
+  background-color: rgb(123, 123, 123);
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  transform: scale(100%);
+}
+
+/* INFO */
+.info {
+  background-color: rgba(0, 126, 21, 0.25);
+  color: rgba(0, 0, 0, 0.4);
+  max-width: fit-content;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+.info span {
+  font-size: 12px;
+}
+
+.info span::before {
+  font-family: "Material Icons";
+  content: "\e88e";
+  position: relative;
+  top: 2px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 3px;
 }
