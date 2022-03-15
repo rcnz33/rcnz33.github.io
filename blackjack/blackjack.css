@@ -100,6 +100,7 @@ body {
 
 .info span {
   font-size: 12px;
+  text-align: center;
 }
 
 .info span::before {
