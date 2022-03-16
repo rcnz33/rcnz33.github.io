@@ -55,13 +55,13 @@ body {
   font-style: italic;
 }
 
-/* START GAME BUTTON */
+/* BUTTONS */
 .buttons {
   display: flex;
   justify-content: center;
   flex-direction: column;
   max-width: 200px;
-  margin: 20px auto;
+  margin: 10px auto;
   gap: 4px;
 }
 
@@ -86,6 +86,25 @@ body {
   background-color: rgb(123, 123, 123);
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   transform: scale(100%);
+}
+
+#playAgainBtn::before {
+  font-family: "Material Icons";
+  content: "\e042";
+  font-size: 1rem;
+}
+
+/* PLAYER */
+.player {
+  background-color: black;
+  padding: 2px;
+  width: 400px;
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  top: -25px;
+  border-radius: 0 0 6px 6px;
+  padding: 2px 10px;
+  font-weight: 600;
 }
 
 /* INFO */
